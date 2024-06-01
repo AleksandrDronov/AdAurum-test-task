@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Inter-Variable';
+  font-display: swap;
+  src:
+    url('@/assets/styles/fonts/Inter-VariableFont.woff2') format('woff2 supports variations'),
+    url('@/assets/styles/fonts/Inter-VariableFont.woff2') format('woff2-variations'),
+    url('@/assets/styles/fonts/Inter-VariableFont.woff') format('woff supports variations'),
+    url('@/assets/styles/fonts/Inter-VariableFont.woff') format('woff-variations');
+}

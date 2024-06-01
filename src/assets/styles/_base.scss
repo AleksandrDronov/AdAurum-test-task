@@ -1,0 +1,13 @@
+@use '@/assets/styles/variables/colors';
+
+body {
+  font-family: 'Inter-Variable', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: colors.$gray;
+}
+
+.text_m {
+  font-size: 18px;
+  font-weight: 600;
+}
