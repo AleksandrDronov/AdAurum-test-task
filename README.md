@@ -1,35 +1,21 @@
-# AdAurum-test-task
+Тестовое задание
 
-This template should help get you started developing with Vue 3 in Vite.
+[деплой](https://ad-aurum-test-task.vercel.app/)
 
-## Recommended IDE Setup
+### Запуск проекта:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+1. Клонировать репозиторий.
 
-## Customize configuration
+   git clone git@github.com:AleksandrDronov/AdAurum-test-task.git
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+2. Войти в папку проекта.
 
-## Project Setup
+   cd AdAurum-test-task
 
-```sh
-npm install
-```
+3. Установить зависимости.
 
-### Compile and Hot-Reload for Development
+   npm install
 
-```sh
-npm run dev
-```
+4. Запуск.
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+   npm run dev
