@@ -8,7 +8,7 @@ import TheFooter from './components/TheFooter/TheFooter.vue';
   <div>
     <TheHeader />
 
-    <main>
+    <main class="custom_scroll">
       <MainSection />
     </main>
   </div>
