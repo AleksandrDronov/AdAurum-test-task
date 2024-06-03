@@ -15,7 +15,7 @@ defineProps({
   color: {
     type: String,
     validator(value) {
-      return ['white'].includes(value)
+      return ['white', 'gray'].includes(value)
     }
   }
 })

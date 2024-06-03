@@ -1,0 +1,78 @@
+@use '@/assets/styles/variables/colors';
+
+.button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: 'Inter-Variable', sans-serif;
+}
+
+.primary {
+  background-color: colors.$pink;
+  padding: 12px 22px;
+  border-radius: 21px;
+  transition: all 300ms ease-out;
+  font-size: 16px;
+  font-weight: 500;
+  color: colors.$white;
+
+  &:hover {
+    background-color: colors.$white;
+    color: colors.$pink;
+  }
+
+  &:active {
+    background-color: colors.$pink;
+    color: colors.$white;
+  }
+}
+
+.secondary {
+  background-color: colors.$blue;
+  padding: 12px 22px;
+  border-radius: 21px;
+  transition: all 300ms ease-out;
+  font-size: 16px;
+  font-weight: 500;
+  color: colors.$white;
+
+  &:hover {
+    background-color: colors.$white;
+    color: colors.$blue;
+  }
+
+  &:active {
+    background-color: colors.$blue;
+    color: colors.$white;
+  }
+}
+
+.tertiary {
+  background-color: colors.$gray-black;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all 300ms ease-out;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    color: colors.$black;
+  }
+
+  &:active {
+    background-color: colors.$blue;
+    color: colors.$white;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  background-color: colors.$gray-black;
+
+  &:hover {
+    cursor: not-allowed;
+    background-color: colors.$gray-black;
+    color: colors.$white;
+  }
+}

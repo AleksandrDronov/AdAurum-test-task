@@ -4,17 +4,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 34px 0;
+  margin: 34px 120px;
+
+  @media screen and (width < 1240px) {
+    margin: 34px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media screen and (width < 600px) {
+    margin: 34px 20px 20px;
+  }
+}
+
+@media screen and (width < 1240px) {
+  .logo {
+    max-width: 200px;
+  }
 }
 
 .container {
   display: flex;
-  align-items: center;
   gap: 26px;
+
+  @media screen and (width < 600px) {
+    gap: 12px;
+  }
 }
 
 .block {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  &_right {
+    gap: 12px;
+  }
+}
+
+@media screen and (width < 600px) {
+  .header_icon {
+    display: none;
+  }
 }

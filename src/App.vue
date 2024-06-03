@@ -1,15 +1,19 @@
 <script setup>
 import TheHeader from './components/Header/TheHeader.vue';
+import MainSection from './components/MainSection/MainSection.vue';
+import TheFooter from './components/TheFooter/TheFooter.vue';
 </script>
 
 <template>
-  <TheHeader />
+  <div>
+    <TheHeader />
 
-  <main>
-  </main>
+    <main>
+      <MainSection />
+    </main>
+  </div>
 
-  <footer>
-  </footer>
+  <TheFooter />
 </template>
 
 <style lang="scss">

@@ -1,0 +1,57 @@
+@use '@/assets/styles/variables/colors';
+
+.footer {
+  margin-top: 60px;
+  background-color: colors.$gray-footer;
+  padding: 28px 120px;
+
+  @media screen and (width < 1240px) {
+    padding: 28px 40px;
+  }
+
+  @media screen and (width < 600px) {
+    background-color: colors.$white;
+    margin-top: 0;
+    padding: 28px 20px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: colors.$gray-text;
+
+  @media screen and (width < 1240px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 60px;
+    row-gap: 20px;
+  }
+}
+
+.link {
+  color: colors.$gray-text;
+}
+
+.block {
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (width < 1240px) {
+  .block {
+    order: 3;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (width < 1240px) {
+  .lang {
+    order: 2;
+  }
+}

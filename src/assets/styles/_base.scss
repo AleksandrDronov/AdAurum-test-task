@@ -2,12 +2,115 @@
 
 body {
   font-family: 'Inter-Variable', sans-serif;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: colors.$gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+  @media screen and (width < 1240px) {
+    background-color: colors.$white;
+  }
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 55px;
+  background: colors.$gray-black;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text_align-center {
+  text-align: center;
+}
+
+.text_regular {
+  font-weight: 400;
+}
+
+.text_medium {
+  font-weight: 500;
+}
+
+.text_semi-bold {
+  font-weight: 600;
+}
+
+.text_s {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.text_sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text_default {
+  font-size: 16px;
+  line-height: 23px;
+
+  @media screen and (width < 600px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .text_m {
   font-size: 18px;
-  font-weight: 600;
+  line-height: 22px;
+
+  @media screen and (width < 1240px) {
+    font-size: 16px;
+  }
+}
+
+.text_l {
+  font-size: 24px;
+  line-height: 29px;
 }
